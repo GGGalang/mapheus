@@ -6,8 +6,6 @@ function start(){
 function startGame() {
   var myGame = new WizardOrpheus('', localStorage.getItem("prompt"));
 
-  promptNum += 1
-
   document.getElementById("confirmed").innerHTML = "Your prompt has been confirmed! You can now start chatting with the bot!";
 
   //user actions
@@ -22,7 +20,7 @@ function startGame() {
       let userInput = document.getElementById('input').value
       myGame.message(userInput)
 
-      document.getElementById('conversation').innerHTML += '<p>' + userInput + '</p>'
+      document.getElementById('conversation').innerHTML += '<p>' + "You: " + userInput + '</p>'
 
       document.getElementById('input').value = ''
     }
@@ -33,7 +31,7 @@ function startGame() {
 
   //response
   myGame.botAction('respond', 'Send a text response to the user', { message: 'What you want to say to the user' }, data => {
-    document.getElementById('conversation').innerHTML += '<p>' + data.message + '</p>'
+    document.getElementById('conversation').innerHTML += '<p style="color: gray;">' + "AI: " + data.message + '</p><br>'
 
     document.getElementById('score').innerHTML = data.currentVariables.score.value
   })
