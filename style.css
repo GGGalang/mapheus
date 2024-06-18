@@ -22,6 +22,7 @@
 html {
   height: 100%;
   width: 100%;
+  animation: 5s fadeIn;
 }
 
 a{
