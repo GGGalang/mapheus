@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Mapheus</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Mapheus</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
 
-  <body>
-    <div id="title">
-      <p class="topText">MAPHEUS!</p>
-      <p class="topText" style="font-size: 20px;">
-        <a href="./index.html">Home</a> <a href="./Premade.html">Premade Prompts</a> <a href="./about.html">About</a>
-      </p>
-    </div>
+    <body>
+        <div id="title">
+            <p class="topText">MAPHEUS!</p>
+            <p class="topText" style="font-size: 20px"><a href="./index.html">Home</a> <a href="./Premade.html">Premade Prompts</a> <a href="./about.html">About</a></p>
+        </div>
 
-    <p style="padding-top: 10px; padding-bottom: 10px">
-      Enter a custom prompt! Note that by entering a prompt, imagine as if you
-      were giving the bot instructions. Start with "you are" or "your task" and
-      then describe what they should do!
-    </p>
+        <span>
+            <br>
+            <br>
+            <button style="background-color: pink; color: black; padding: 30px; font-size: 30px; border: none;"><a href="./jokes.html">I'm Feeling A Bit Funny Today...</a></button>
 
-    <textarea id="prompt" placeholder="Type here..."></textarea>
-    <br />
-    <button onclick="start()">Start a New Game with Prompt!</button>
+            <br />
+            <br />
+            <br />
+            <hr class="solid" style="color: black; border-width: 3px" />
+            <br />
+        </span>
 
-    <br />
-    <br />
-    <br />
-    <hr class="solid" style="color: black; border-width: 3px" />
-    <br />
+        <p style="padding-top: 10px; padding-bottom: 10px">Enter a custom prompt! Note that by entering a prompt, imagine as if you were giving the bot instructions. Start with "you are" or "your task" and then describe what they should do!</p>
 
-    <div id="confirmed"></div>
-    <p style="margin-bottom: 20px">Type below to start with your prompt!</p>
-    <div id="conversation"></div>
+        <textarea id="prompt" placeholder="Type here..."></textarea>
+        <br />
+        <button onclick="start()">Start a New Game with Prompt!</button>
 
-    <textarea id="input" placeholder="Type here..."></textarea>
-    <br />
-    <i>Press enter to submit...</i>
-    <br />
-    <br />
+        <br />
+        <br />
+        <br />
+        <hr class="solid" style="color: black; border-width: 3px" />
+        <br />
 
-    <p>Score: <span id="score">0</span></p>
-    <button onclick="window.location.reload()">Restart! (Does not change prompt)</button>
+        <div id="confirmed"></div>
+        <p style="margin-bottom: 20px">Type below to start with your prompt!</p>
+        <div id="conversation"></div>
 
-    <script src="https://wizard-orpheus.hackclub.dev/wizard_orpheus.js"></script>
-    <script src="script.js"></script>
-  </body>
+        <textarea id="input" placeholder="Type here..."></textarea>
+        <br />
+        <i>Press enter to submit...</i>
+        <br />
+        <br />
+
+        <p>Score: <span id="score">0</span></p>
+        <button onclick="window.location.reload()">Restart! (Does not change prompt)</button>
+
+        <script src="https://wizard-orpheus.hackclub.dev/wizard_orpheus.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>
