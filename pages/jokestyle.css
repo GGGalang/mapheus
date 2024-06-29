@@ -1,6 +1,6 @@
 @font-face {
   font-family: Coffee;
-  src: local("Coffee"), url(./Bantayog.otf) format("opentype");
+  src: local("Coffee"), url(../Bantayog.otf) format("opentype");
 }
 
 @keyframes fadeIn {
