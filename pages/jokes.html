@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Mapheus</title>
+        <link href="./jokestyle.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div id="title">
+            <p class="topText">MAPHEUS...?</p>
+            <p class="topText" style="font-size: 20px"><a href="../index.html">Home</a> <a href="./PremadeJokes.html">Other Jokes</a> <a href="./about.html">About</a></p>
+        </div>
+
+        <span>
+            <br />
+            <br />
+            <button style="background-color: black; color: black; padding: 30px; font-size: 30px; border: none"><a href="../index.html">I'm Feeling A Bit Adventurous Today!</a></button>
+
+            <br />
+            <br />
+            <br />
+            <hr class="solid" style="color: black; border-width: 3px" />
+            <br />
+        </span>
+
+        <!--custom jokes-->
+        <div>
+            <p style="padding-top: 10px; padding-bottom: 10px">Category: Custom Jokes<br />Type something in the textarea and the bot will try to make jokes about it!</p>
+
+            <div id="conversationCust"></div>
+            <br />
+            <textarea id="custMessage" placeholder="Type what kind of joke you want here!"></textarea>
+            <br />
+            <button id="btnCust" onclick="startCust()">Jokify!</button>
+
+            <br />
+            <br />
+            <br />
+            <hr class="solid" style="color: black; border-width: 3px" />
+        </div>
+
+        <p style="padding-top: 10px; padding-bottom: 10px">Category: Dad Jokes</p>
+
+        <div id="conversation"></div>
+        <br />
+
+        <button id="" onclick="startJoke()">Make Me a Joke, Dad!</button>
+
+        <br />
+        <br />
+        <br />
+        <hr class="solid" style="color: black; border-width: 3px" />
+
+        <script src="https://wizard-orpheus.hackclub.dev/wizard_orpheus.js"></script>
+        <script src="../scripts/script.js"></script>
+    </body>
+</html>
